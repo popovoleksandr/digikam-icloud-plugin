@@ -1,0 +1,4 @@
+#!/bin/sh
+# Command-line front end of the iCloud Photos engine used by the digiKam plugin.
+export PYTHONPATH="@ENGINE_INSTALL_DIR@${PYTHONPATH:+:$PYTHONPATH}"
+exec "${DKICLOUD_PYTHON:-python3}" -m dkicloudphotos "$@"
